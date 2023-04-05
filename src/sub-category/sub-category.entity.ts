@@ -22,7 +22,6 @@ export class SubCategoryEntity extends BaseEntity {
     })
     games: GameEntity[];
 
-    @AfterLoad()
     @AfterInsert()
     @AfterUpdate()
     async nullChecks() {

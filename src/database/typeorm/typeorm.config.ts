@@ -14,9 +14,6 @@ export const options = async (config: ConfigService): Promise<TypeOrmModuleOptio
         type: 'postgres',
         schema: 'public',
         entities: ['dist/**/*.entity.{ts,js}'],
-        migrations: ['migrations/*_migration.ts'],
-        migrationsTableName: 'migrations',
-        migrationsRun: true,
         logging,
     };
 };

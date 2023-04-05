@@ -22,7 +22,6 @@ export class GameEntity extends BaseEntity {
     })
     categories: CategoryEntity[];
 
-    @AfterLoad()
     @AfterInsert()
     @AfterUpdate()
     async nullChecks() {
